@@ -53,7 +53,7 @@ dependencies {
 }
 
 group = "com.msg91.lib"
-version = "1.0.0"
+version = "1.0.1"
 val artifactName = "hellosdk"
 val artifactDescription = "Hello SDK for Android by MSG91"
 val artifactUrl = "https://github.com/Walkover-Web-Solution/MSG91-hello-kotlin-sdk"
@@ -117,7 +117,7 @@ afterEvaluate {
         publishAllPublications {
             username = findProperty("SONATYPE_USER_NAME") as String? ?: ""
             password = findProperty("SONATYPE_PASSWORD") as String? ?: ""
-            publicationType = "USER_MANAGED"
+            publicationType = "AUTOMATIC"
         }
     }
 }

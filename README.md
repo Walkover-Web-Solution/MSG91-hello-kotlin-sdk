@@ -52,6 +52,8 @@ android {
 ### 1. Basic Integration
 
 ```kotlin
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.msg91.hellosdk.ChatWidget
 import com.msg91.hellosdk.config.HelloConfig
 
@@ -174,6 +176,12 @@ ChatWidget.update(updatedConfig)
 ### Fragment Lifecycle Management
 
 ```kotlin
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.msg91.hellosdk.ChatWidget
+import com.msg91.hellosdk.config.HelloConfig
+
 class ChatActivity : AppCompatActivity() {
     
     private lateinit var chatFragment: Fragment
@@ -278,6 +286,11 @@ val modalWidget = ChatWidget.createFragment(
 The SDK fully supports edge-to-edge layouts. Handle window insets in your Activity:
 
 ```kotlin
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     enableEdgeToEdge()
@@ -311,6 +324,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ### Error Handling Example
 
 ```kotlin
+import android.util.Log
+import com.msg91.hellosdk.ChatWidget
+import com.msg91.hellosdk.config.HelloConfig
+
 try {
     val config = HelloConfig("your-widget-token")
         .withProperty("mail", "user@example.com")
