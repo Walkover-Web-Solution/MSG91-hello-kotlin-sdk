@@ -24,7 +24,7 @@ A modern, embeddable chat widget SDK for Android applications that provides seam
 
 ```kotlin
 dependencies {
-    implementation("com.msg91:hellosdk:latest_version")
+    implementation("com.msg91.lib:hellosdk:latest_version")
     
     // Required dependencies (if not already included)
     implementation("androidx.activity:activity-ktx:1.8.2")
@@ -433,14 +433,13 @@ File uploads are handled automatically. If you encounter issues:
 For technical support or questions:
 
 - 📧 Email: support@msg91.com
-- 📚 Documentation: [Link to full documentation]
-- 🐛 Bug Reports: [Link to issue tracker]
+- 🐛 Bug Reports: [GitHub Issues](https://github.com/Walkover-Web-Solution/MSG91-hello-kotlin-sdk/issues)
 
 ## License
 
 ```
 Copyright (c) MSG91
-Licensed under [License Type]
+Licensed under the Apache License, Version 2.0
 ```
 
 ---
